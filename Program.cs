@@ -4,9 +4,21 @@
     {
         VideoJuego.Saludo();
 
+        // Crear instancia de VideoJuego para The Legend of Zelda: Breath of the Wild
+        VideoJuego zelda = new VideoJuego
+        {
+            Titulo = "The Legend of Zelda: Breath of the Wild",
+            Desarrolladora = "Nintendo",
+            Calificacion = 10,
+            AnioLanzamiento = 2017
+        };
+
+        // Agregar el juego Zelda a la lista de juegos
+        GestorDeVideojuegos.AgregarJuego(zelda);
+
         // Crear instancias de clases derivadas
         JuegoAccion juegoAccion = new JuegoAccion("Gears of War", "Epic Games", 9.5, 2006, 5);
-        JuegoAventura juegoAventura = new JuegoAventura("The Witcher 3: Wild Hunt", "CD Projekt Red", 9.3, 2015, 100);
+        JuegoAventura juegoAventura = new JuegoAventura("Final Fantasy 7 Remake", "Square Enix", 10, 2015, 70);
         JuegoDeportes juegoDeportes = new JuegoDeportes("FIFA 22", "EA Sports", 8.7, 2021, "Fútbol");
 
         // Agregar juegos a la lista
